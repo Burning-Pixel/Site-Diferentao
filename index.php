@@ -18,10 +18,22 @@
     <div id="content_home">
         
         <a href="<?php bloginfo('url'); ?>" title="Home"><div id="home_logo"></div></a>
-        
-        <div id="publicidade_home">
 
-        </div>
+        <!--PUBLICIDADE DO GOOGLE--> 
+        <div id="publicidade_home">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Anuncio TOP -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1746143701175258"
+                 data-ad-slot="5247708527"
+                 data-ad-format="auto">
+            </ins>
+            
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div> 
 
     <div id="midias_sociais">
         <a href="https://www.facebook.com/canaldiferentao" target="blank"><div id="midias_sociais_item" class="ms_face"></div></a>
@@ -62,7 +74,7 @@
         <div id="post_home_1" class="mosaic-block bar2">
             
             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-             query_posts('post_type=diferentao&cat=11&showposts=1');?>
+             query_posts('cat=7&showposts=1');?>
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                  <div class="post" id="post-<?php the_ID(); ?>">
@@ -76,7 +88,7 @@
                     </a>
 
                     <div class="mosaic-backdrop">
-                        <?php the_post_thumbnail(array(330,250,true)); ?>
+                        <?php the_post_thumbnail(array(480,450,true)); ?>
                     </div>
                  </div>
 
@@ -87,7 +99,7 @@
         
         <div id="post_home_2" class="mosaic-block bar2">
             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-             query_posts('post_type=diferentao&cat=11&showposts=1&offset=1');?>
+             query_posts('cat=7&showposts=1&offset=1');?>
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                  <div class="post" id="post-<?php the_ID(); ?>">
@@ -100,7 +112,7 @@
                     </a>
 
                     <div class="mosaic-backdrop">
-                        <?php the_post_thumbnail(array(330,250,true)); ?>
+                        <?php the_post_thumbnail(array(500,350,true)); ?>
                     </div>
                  </div>
 
@@ -110,7 +122,7 @@
         
         <div id="post_home_3" class="mosaic-block bar2">
             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-             query_posts('post_type=diferentao&cat=11&showposts=1&offset=2');?>
+             query_posts('cat=7&showposts=1&offset=2');?>
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                  <div class="post" id="post-<?php the_ID(); ?>">
@@ -123,7 +135,7 @@
                     </a>
 
                     <div class="mosaic-backdrop">
-                        <?php the_post_thumbnail(array(330,250,true)); ?>
+                        <?php the_post_thumbnail(array(500,350,true)); ?>
                     </div>
                  </div>
 
@@ -273,7 +285,7 @@
                                </a>
 
                                <div class="mosaic-backdrop">
-                                   <img class="post_novidades_imagem" height="170" width="310" src="<?php //  echo gerar_thumbnail_youtube($post->ID)[0]; ?>">
+                                   <?php the_post_thumbnail(array(330,250,true)); ?>
                                </div>
                             </div>
 
@@ -304,7 +316,19 @@
         
         <div id="publicidade_top_3">
             
-        </div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Anuncio TOP -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1746143701175258"
+                 data-ad-slot="5247708527"
+                 data-ad-format="auto">
+            </ins>
+            
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div> 
 
         <div id="frase_rodape">
             <h1 style="margin: 0 0 0 150px;">"SEJA A DIFERENÇA QUE VOCÊ DESEJA PARA O MUNDO"</h1>
