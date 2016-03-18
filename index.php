@@ -59,9 +59,9 @@
     <div id="post_home">
 
         
-<!--        <div id="post_home_1" class="mosaic-block bar2">
+        <div id="post_home_1" class="mosaic-block bar2">
             
-            <?php /*$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
              query_posts('post_type=diferentao&cat=11&showposts=1');?>
             <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
@@ -81,9 +81,9 @@
                  </div>
 
                  <?php endwhile; ?>
-             <?php endif; */?>
+             <?php endif; ?>
 
-        </div>-->
+        </div>
         
         <div id="post_home_2" class="mosaic-block bar2">
             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
