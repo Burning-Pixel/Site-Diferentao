@@ -107,7 +107,9 @@
                             
                             <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="canaldiferentao" rel="nofollow">Tweet</a>                            
                             
-                            <iframe width="635" height="355" src="<?php echo gerar_iframe_youtube(get_field('link_do_video'))?>" frameborder="0" allowfullscreen></iframe>
+                            <iframe class="iframe" width="680" height="355" src="<?php echo gerar_iframe_youtube(get_field('link_do_video'))?>" frameborder="0" allowfullscreen></iframe>
+                            
+                            <img src="<?php bloginfo('template_directory'); ?>/images/chamada-para-acao.png">
                             
                             <div id="inscrever_se" class="inscrever">
                                 
@@ -115,10 +117,6 @@
                                     
                                     <li>
                                         <div class="fb-follow" data-href="https://www.facebook.com/canaldiferentao/" data-layout="button_count" data-show-faces="true"></div>
-                                    </li>
-                                    
-                                    <li>
-                                        <g:plusone size="standard"></g:plusone>
                                     </li>
                                     
                                     <li>
