@@ -109,9 +109,9 @@
                             
                             <iframe class="iframe" width="680" height="355" src="<?php echo gerar_iframe_youtube(get_field('link_do_video'))?>" frameborder="0" allowfullscreen></iframe>
                             
-                            <img src="<?php bloginfo('template_directory'); ?>/images/chamada-para-acao.png">
+                            <img style="position: relative; z-index: 99;" src="<?php bloginfo('template_directory'); ?>/images/chamada-para-acao.png">
                             
-                            <div id="inscrever_se" class="inscrever">
+                            <div id="inscrever_se" class="inscrever" style="position: relative; z-index: 100;">
                                 
                                 <ul id="inscrever_se_ul">
                                     

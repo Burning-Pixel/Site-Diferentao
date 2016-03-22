@@ -727,6 +727,19 @@ function title_excerpt_novidades($maxchars) {
     echo $title;
 }
 
+
+// LIMITAR CARACTERES NO TITULO
+function title_length($maxchars) 
+{
+ $title = get_the_title($post->ID);
+ $title = substr($title,0,$maxchars);
+ $tamanhotitulo=strlen($title);
+ if ($tamanhotitulo < $maxchars)
+ echo $title;
+ else
+ echo $title . '...';
+}
+
 //POSTS ALEATÓRIOS
 function posts_aleatorios(){
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts('orderby=rand&showposts=10');

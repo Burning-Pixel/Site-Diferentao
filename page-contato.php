@@ -16,6 +16,15 @@ Template Name: Contato
 
 <?php get_header(); ?>
 
+<?php
+$email = $_REQUEST; 
+
+echo '<pre>';
+print_r($_REQUEST);
+echo '</pre>';
+
+?>
+
 <div id="container_single_1">
     
     <div id="single_diferentao_content">
@@ -66,20 +75,42 @@ Template Name: Contato
         <div id="content_single_2">
             
             <div class="content">
-
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="post" id="post-<?php the_ID(); ?>">
-		<h1><?php the_title(); ?></h1>
-			<div class="entry">
-				<?php the_content('Read More'); ?>
-
-				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-				
-				<?php edit_post_link('Edit', '<p>', '.</p>'); ?>
-			</div>
-		</div>
-		<?php endwhile; endif; ?>
-	</div>
+                <div class="wpcf7" id="contatc_form" style=" float: left; padding: 5px;">
+                    <form name="formulario_de_contato" method="post" action="<?php bloginfo('template_directory'); ?>/page-contato.php">
+                        <ul>
+                            <li>
+                                Seu nome:
+                            </li>
+                            
+                            <li>
+                                <input type="text" name="nome">
+                            </li>
+                            
+                            <li>
+                                Seu email:
+                            </li>
+                            
+                            <li>
+                                <input type="text" name="email" >
+                            </li>
+                            
+                            <li>
+                                Sua mensagem:
+                            </li>
+                            
+                            <li>
+                                <textarea role="30" name="mensagem"></textarea>
+                            </li>
+                            
+                            <li>
+                                <input type="submit" value="Enviar">
+                            </li>
+                            
+                        </ul>
+                    </form>
+                    
+                </div>
+            </div>
         </div>
         
         <?php include(TEMPLATEPATH."/primary-sidebar.php");?>

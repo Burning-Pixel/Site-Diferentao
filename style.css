@@ -973,21 +973,22 @@ img.alignleft {
 }
 
 .wpcf7 input{
-	border:2px solid #000;
+	border:2px solid #c4c4c4;
 	padding:4px;
 	-moz-border-radius: 6px;
 	-khtml-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
         margin: 5px 0;
-         width: 665px;
+         width: 660px;
 }
 
 .wpcf7 textarea{
         margin: 5px 0;
-        width: 665px;
+        width: 660px;
+        height: 120px;
 	padding:4px;
-	border:2px solid #000;
+	border:2px solid #c4c4c4;
 	-moz-border-radius: 6px;
 	-khtml-border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -996,6 +997,7 @@ img.alignleft {
 
 .wpcf7 input[type=submit]{
 	border:none;
+        width: 120px;
 	padding:4px 10px;
 	-moz-border-radius: 6px;
 	-khtml-border-radius: 6px;
